@@ -3,8 +3,6 @@
 <p>Age: <%= @artist.age %></p>
 <p>Bio: <%= @artist.bio %></p>
 <p><%= link_to "Edit Artist", edit_artist_path %></p>
-
-<%#delete can be added later %>
+<p><%= link_to "Delete Artist", artist_path(@artist.id), method: :delete %></p>
 
 <p><%= link_to "Artists Page", artists_path %></p>
-
